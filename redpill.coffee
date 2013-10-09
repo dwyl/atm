@@ -1,16 +1,10 @@
-
-
-# document.body.appendChild(cartDiv)
-# rpdiv = document.createElement("div")
-# rp.id = '_rp'
-# 
-
 window.onload = () ->
+	# createRedPillButton()
+
 	window.clicked = ''
 	rpdiv = document.createElement('div');
 	document.body.appendChild(rpdiv)
 	rpdiv.id = '_rp'
-
 
 	rpdiv.style.lineHeight = '10px'
 	rpdiv.style.fontSize = '10px'
@@ -43,7 +37,8 @@ window.onload = () ->
 		t = document.body.scrollTop
 		# console.log "Top: #{document.body.scrollTop}"
 		bw = document.documentElement.clientWidth
-		rpdiv.innerHTML = "Debug: #{clock} | W:#{w} | H:#{h} | T:#{t} | [#{bw}] | #{window.clicked}"
+
+		rpdiv.innerHTML = "Debug: #{clock} | W:#{w} | H:#{h} | T:#{t} | [#{bw}] | #{window.clicked} | " + navigator.sayswho();
 	, 300
 
 	document.onclick = (evt) ->
@@ -56,6 +51,14 @@ window.onload = () ->
 	# note: you can use window.innerWidth and window.innerHeight to access the width and height of the viewing area
 
 # basic browser detection. see: http://stackoverflow.com/a/2401861/1148249
+
+createRedPillButton = () ->
+    rpbtn = document.createElement("input")
+    rpbtn.type = "button"
+    document.body.appendChild(rpbtn)
+    rpdiv.id = '_rpbtn'	
+
+    
 
 navigator.sayswho = () ->
 	N = navigator.appName 
