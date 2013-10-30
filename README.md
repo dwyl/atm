@@ -23,4 +23,6 @@ instead I want to create a 2k file which then loads all the other
 components JIT only *if* the person using the app wants/needs them.
 
 I want to allow people to opt-in to analytics and to have full access to their
-own stats. i.e. "personal analytics"
+own stats. i.e. "personal analytics".
+But don't want to over-complicate it...
+Need to strike a balance between features and simplicity.
