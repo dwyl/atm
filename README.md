@@ -22,8 +22,5 @@ but it requires loading the YUI library which is **90kb** *minified*! :-(
 instead I want to create a 2k file which then loads all the other 
 components JIT only *if* the person using the app wants/needs them.
 
-
-
-had a really strange dream where I was expelled from my highschool for
-my relashionship... but I fought it in the courts and won.
-Remember kids: Rules are not **Law** so if rules sound stupid, fight them!
+I want to allow people to opt-in to analytics and to have full access to their
+own stats. i.e. "personal analytics"
