@@ -21,7 +21,9 @@ What happens to this data?
 - Save this data to local storage / cookie so user can track their own history.
 - Send data over WebSocket to server and broadcast to connected obeservers
 
+### Notes
 
+- Capybara cheat sheet: https://gist.github.com/zhengjia/428105
 
 
 A simple client-side debug viewer.
@@ -32,6 +34,8 @@ but it solved the problem I had at the time
 
 I've been debating weather to re-write it using a Library 
 (e.g. JQuery or Zepto) but want to keep it lightweight.
+
+
 
 How do I write this TDD/TFD...? Karma.js?
 
