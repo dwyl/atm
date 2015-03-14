@@ -1,0 +1,22 @@
+{
+  "name": "liso",
+  "version": "1.0.0",
+  "description": "smooth testing",
+  "main": "kasia.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelsonic/liso.git"
+  },
+  "keywords": [
+    "smooth"
+  ],
+  "author": "@nelsonic <contact.nelsonic@gmail.com> (https://github.com/nelsonic)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelsonic/liso/issues"
+  },
+  "homepage": "https://github.com/nelsonic/liso"
+}
