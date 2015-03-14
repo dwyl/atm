@@ -1,30 +1,5 @@
-redpill
-=======
-
-RedPill lets non-technical people peek under the hood of web apps.
-
-## Features
-
-When the page loads we register:
-
-- Page URL
-- Client's Browser + Version
-- Client ViewPort (width/height of browser window)
-
-Track/record actions performed on the page
-
-- Page scroll (top value)
-- Click/Touch events [x,y], element type and class/id
-
-What happens to this data?
-
-- Save this data to local storage / cookie so user can track their own history.
-- Send data over WebSocket to server and broadcast to connected obeservers
 
 ### Notes
-
-- Capybara cheat sheet: https://gist.github.com/zhengjia/428105
-
 
 A simple client-side debug viewer.
 
@@ -40,8 +15,6 @@ I've been debating weather to re-write it using a Library
 How do I write this TDD/TFD...? Karma.js?
 
 
-### Notes
-
 YUI has a Y.log('msg here') method which does something
 similar to what I want: http://yuilibrary.com/yui/docs/console/
 but it requires loading the YUI library which is **90kb** *minified*! :-(
@@ -56,3 +29,13 @@ Need to strike a balance between features and simplicity.
 
 Considering using Require.js to load different elements...
 Which means I need to write a require.js tutorial... :-)
+
+
+## Research
+
+### Existing Testing Systems
+
++ Test Anything Protocol: https://testanything.org/
++ eggPlant overview: https://www.youtube.com/watch?v=Px9Be559lKU
++ Caypbara: http://jnicklas.github.io/capybara/
+  + Capybara cheat sheet: https://gist.github.com/zhengjia/428105
