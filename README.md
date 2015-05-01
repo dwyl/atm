@@ -1,9 +1,9 @@
-Liso
+alvo
 =======
 
-![Liso Learner Logo](http://i.imgur.com/7aDy8da.jpg)
+![placeholder image](http://i.imgur.com/uQughKi.jpg)
 
-**Liso** (pronounced "*Lee's oh*!") enables ***non-technical people*** to ***understand*** and ***test*** the **web**.
+**alvo** (pronounced "*al vu*!") enables ***non-technical people*** to ***understand*** and ***test*** the **web**.
 
 ## Why?
 
