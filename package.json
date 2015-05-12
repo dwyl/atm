@@ -4,7 +4,8 @@
   "description": "What cucumber could have been if it was written for humans",
   "main": "tbd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/static-server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dwyl/alvo/issues"
   },
-  "homepage": "https://github.com/dwyl/alvo"
+  "homepage": "https://github.com/dwyl/alvo",
+  "dependencies": {
+    "hapi": "^8.4.0"
+  }
 }
