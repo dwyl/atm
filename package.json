@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/dwyl/alvo",
   "devDependencies": {
-    "live-server": "^1.2.0"
+    "browserify": "^14.0.0",
+    "live-server": "^1.2.0",
+    "uglify-js": "^2.7.5",
+    "watchify": "^3.9.0"
   }
 }
