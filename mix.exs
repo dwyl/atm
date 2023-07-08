@@ -4,12 +4,22 @@ defmodule Atm.MixProject do
   def project do
     [
       app: :atm,
-      version: "0.1.0",
+      version: "1.0.0",
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        c: :test,
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.json": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test,
+        t: :test
+      ]
     ]
   end
 
@@ -47,7 +57,13 @@ defmodule Atm.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+
+      # Track test coverage: github.com/parroty/excoveralls
+      {:excoveralls, "~> 0.15", only: [:test, :dev]},
+
+      # Useful functions: github.com/dwyl/useful
+      {:useful, "~> 1.11.1"}
     ]
   end
 
@@ -65,7 +81,10 @@ defmodule Atm.MixProject do
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
       "assets.build": ["tailwind default", "esbuild default"],
-      "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"]
+      "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"],
+      c: ["coveralls.html"],
+      s: ["phx.server"],
+      t: ["test"]
     ]
   end
 end
