@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 alvo
 =======
 
@@ -66,31 +67,63 @@ That's it! it reads like english!
 **Q**: *What* are the **#** (*hash*) simbols?  
 **A**: They are the id's of the form elements on the *contact* page.  
 (hint: *Scroll down* to the ***glossary*** to learn more)
+=======
+<div align="center">
+    <img src="https://github.com/dwyl/atm/assets/194400/1d71bfb3-1c55-46f0-8c0e-b72b725937bd" height="300">
+    <h1>**A**ctionable **T**imely **M**etrics.</h1>
+>>>>>>> 5104fda (add intro logo see: https://github.com/dwyl/atm/issues/23#issuecomment-1626997323 🏧)
 
 
-### *Easily* Record How you *Use* a Website or Web Application
 
-When the page loads we register:
+</div>
 
-+ Client's Browser + Version (full user-agent string & short name)
-+ Page URL
-+ Client ViewPort (width/height of browser window) dimensions
-+ IP address of the client (all server logs store this)
+# Why? 🤷‍♀️
 
-Track/record actions performed on the page
+We needed a **_much_ better way**
+of **tracking, viewing and _acting_ on**
+**metrics** in our projects.
 
-- Page scroll (distance scrolled from the top)
-- Click/Touch events [x,y], element type and class, id and name
+## Data Driven? 🙈
 
-What happens to this data?
+After **20 years** of working 
+in Web Application/Site Development,
+with more than 100 project teams and organizations
+we've noted one alarming fact:
 
-- Save this data to local storage / cookie so a person can track their *own* history.
-- Send data over WebSocket to server
-+ Relay event log to connected obeservers (with permission)
+**_Most_ Product Owners don't _check_ Google Analytics** 
+and use the **insights** to **_drive_ decisions**. 
 
-## Project Name
 
-> "*All the good names are taken.*"
 
-[***alvo***](https://translate.google.com/#auto/en/alvo) means "target".
-And since we are
+If the **_leaders_ aren't data driven**,
+_nobody_ `else` in the team will be. 
+And ultimately the project/product will fail.
+Or if it succeeds, 
+it will be _despite_ the leaders. 
+
+
+# What?
+
+More detail in: https://github.com/dwyl/atm/issues/16
+
+
+
+## Name? 🏧 
+
+"ATM" stands for "Actionable Timely Metrics" (_this is a ["backronym"](https://en.wikipedia.org/wiki/Backronym)). We **really** wanted to give this project a name that is both short, _memorable_ and helps stakeholders _understand_ the importance of analytics data to the organisation!
+
+
+![free-cash-withdrawals](https://github.com/dwyl/atm/assets/194400/78fda825-5f71-4eed-8738-aef033829d7c)
+
+# Who?
+
+This project aims to both _simplify_ the language/vocabulary around analytics/metrics and create a simple way of tracking _any_ event in _any_ web app. 
+
+If it's not _immediately obvious_ **Why** this project is valuable and **How** it works, 
+we have failed. So if you are scratching your head wondering: "_Is this for **me**?_" ... 
+**please _help_ us** by describing your situation so we can **_help_ you** realise the _value_ of the data you are sending to Google Analytics and then _ignoring_... 
+
+# How?
+
++ [ ] Define the basic schema for an Events (Analytics) Table!
++ [ ] Implement it!
