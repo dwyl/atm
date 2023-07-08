@@ -2,7 +2,10 @@
     <img src="https://github.com/dwyl/atm/assets/194400/1d71bfb3-1c55-46f0-8c0e-b72b725937bd" height="300">
     <h1><b>A</b>ctionable <b>T</b>imely <b>M</b>etrics.</h1>
 
-
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dwyl/atm/ci.yml?label=build&style=flat-square&branch=main)
+[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/atm/main.svg?style=flat-square)](https://codecov.io/github/dwyl/atm?branch=main)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/atm/issues)
+[![HitCount](https://hits.dwyl.com/dwyl/atm.svg?style=flat-square&show=unique)](https://hits.dwyl.com/dwyl/atm)
 
 </div>
 
@@ -31,7 +34,20 @@ it will be _despite_ the leaders.
 
 # What?
 
-More detail in: https://github.com/dwyl/atm/issues/16
+For now this project 
+is for our _internal_ use 
+while building our 
+[`MVP`](https://github.com/dwyl/mvp/) 
+and various supporting services like 
+[`auth`](https://github.com/dwyl/auth),
+[`imgup`](https://github.com/dwyl/imgup)
+and
+[`linky`](https://github.com/dwyl/linky)
+
+But "roadmap" is to build a fully featured analytics tool
+that can track _any_ client event.
+More detail in: 
+[atm/issues/16](https://github.com/dwyl/atm/issues/16)
 
 
 
@@ -79,20 +95,30 @@ and then _ignoring_...
 
 If you haven't already,
 please try the demo: 
-
+[atms.fly.dev](https://atms.fly.dev)
 
 
 ## Run on `localhost`
 
-To run the `ATM` on your machine,
+To run the `ATM` on your machine:
+
+1. Open your terminal 
+   and Clone the repository
 
 
+```sh
+git clone git@github.com:dwyl/atm.git && cd atm
+```
 
-1. 
+2. Execute `setup` command to install dependencies and create the `DB`:
+```sh
+mix setup
+``` 
 
-Run 
-`mix setup` 
-to install and setup dependencies.
+3. Run the App: 
+```sh
+mix s
+```
 
 Now visit 
 [`localhost:4000`](http://localhost:4000) 
