@@ -63,7 +63,7 @@ defmodule Atm.MixProject do
       {:excoveralls, "~> 0.15", only: [:test, :dev]},
 
       # Useful functions: github.com/dwyl/useful
-      {:useful, "~> 1.13.0"}
+      {:useful, "~> 1.14.0"}
     ]
   end
 
